@@ -170,13 +170,13 @@ function content() {
     }
 
     // Color prices under or equal to 0, use green
-    if (prices[0] <= 0) {
+    if (prices[i] <= 0) {
       color = '#61E294';
     }
 
     // Color prices under -0.17, use dark green
     if (prices[i] < -0.17) {
-      color = '#08605F';
+      color = '#009494';
     }
 
     if (i < hour) {
