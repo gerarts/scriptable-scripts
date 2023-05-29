@@ -91,8 +91,6 @@ const backgroundColor = new Color('#292450');
 ctx.setFillColor(backgroundColor);
 ctx.fillRect(new Rect(0, 0, W, H));
 
-widget.backgroundColor = backgroundColor;
-
 // Icons
 ctx.setTextColor(new Color('#ffffff'));
 ctx.setFont(Font.regularSystemFont(T.h * 0.9));
@@ -221,6 +219,7 @@ function content() {
   
   // Draw
   const widget = new ListWidget();
+  widget.backgroundColor = backgroundColor;
   widget.backgroundImage = ctx.getImage();
   
   if (config.runsInWidget) {
