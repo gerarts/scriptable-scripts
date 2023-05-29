@@ -170,7 +170,7 @@ function content() {
     }
 
     // Color prices under -0.17, use green
-    if (prices[i] < 0.17) {
+    if (prices[i] < -0.17) {
         color = '#61E294';
     }
 
