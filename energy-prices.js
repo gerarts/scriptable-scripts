@@ -87,8 +87,11 @@ const ctx = new DrawContext();
 
 ctx.size = new Size(W, H);
 
-ctx.setFillColor(new Color('#292450'));
+const backgroundColor = new Color('#292450');
+ctx.setFillColor(backgroundColor);
 ctx.fillRect(new Rect(0, 0, W, H));
+
+widget.backgroundColor = backgroundColor;
 
 // Icons
 ctx.setTextColor(new Color('#ffffff'));
